@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Learning Materialize</title>
+</head>
+<body>
+
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper indigo">
+      <div class="container">
+        <a href="#" class="brand-logo">Library</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+			<li>    
+                       <div class="center row">
+                          <div class="col s12 " >
+                            <div class="row" id="topbarsearch">
+                              <div class="input-field col s6 s12 red-text">
+                                <i class="red-text material-icons prefix">search</i>
+                                <input type="text" placeholder="Search" id="autocomplete-input" class="autocomplete red-text" >
+                                </div>
+                              </div>
+                            </div>
+                          </div>          
+                      </li>
+            <li><a href="">Add Member</a></li>
+			<li><a href="">Books</a></li>
+			<li><a href="">Delete Member</a></li>
+			<li><a href="">Reminders</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-links">
+    <li><a href="">Add Membetr</a></li>
+    <li><a href="">Books</a></li>
+    <li><a href="">Delete Member</a></li>
+	<li><a href="">Reminders</a></li>
+  </ul>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+	
+  </script>
+  <script>
+            $(document).ready(function(){                 
+                $('input.autocomplete').autocomplete({
+                data: {
+                    "Apple": null,
+                    "Microsoft": null,
+                    "Google": null,
+                    "Gargle":null
+                }
+                });                
+                });
+      </script>   
+</body>
+</html
